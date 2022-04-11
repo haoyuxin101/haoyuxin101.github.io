@@ -4,12 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <h1 >Hello, JavaScript!</h1>
-    <p> Hello, third. </p>
-    <h2> Hello, fourth. </h2>
-    <p>add from Hao Guanjun.</p>
+  <div class = "main">
+    <div class = "header">
+      <h1> To do list </h1>;
+    </div>
+    <div class = "content">
+      <div class = "myForm">
+        <div class="mb-3 row">
+          <label for="txtSubject" class="col-sm-2 col-form-label">Subject</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="txtSubject" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="txtDetail" class="col-sm-2 col-form-label">Detail</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="txtDetail">
+          </div>
+        </div>
+        <div class = "mb-3 row">
+          <div class = "col-sm-2"></div>
+          <div class = "col-sm-8">
+            <button type="button" class="btn btn-primary btn-sm" id = "btnSave">Save</button>
+          </div>
+        </div>
+      </div>
+      <div class = "todoList" id = "lstTodo">
+
+      </div>
+    </div>
+    <div class = "footer"></div>
+  </div>
+  <script src = "main.js"></script>
 </body>
 </html>
+
+
